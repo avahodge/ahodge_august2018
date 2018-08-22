@@ -4,7 +4,7 @@
  * @author Ava Hodge 
  * @version 8/20/18
  */
-public class Hello_world
+public class Hello__world
 {
     public static void main(String[] args)
     {
