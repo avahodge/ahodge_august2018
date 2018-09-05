@@ -1052,3 +1052,43 @@ java.lang.Exception: The project description file (.project) for 'hmmmm' is miss
 	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-05 09:48:45.202
+!MESSAGE An exception occurred during push on URI https://github.com/avahodge/ahodge_august2018.git: https://github.com/avahodge/ahodge_august2018.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/avahodge/ahodge_august2018.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:180)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/avahodge/ahodge_august2018.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:531)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:438)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1346)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:170)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-05 09:48:45.265
+!MESSAGE Can't connect to any repository: https://github.com/avahodge/ahodge_august2018.git (https://github.com/avahodge/ahodge_august2018.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-05 09:49:17.011
+!MESSAGE An exception occurred during push on URI https://github.com/avahodge/ahodge_august2018.git: https://github.com/avahodge/ahodge_august2018.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/avahodge/ahodge_august2018.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:180)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/avahodge/ahodge_august2018.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:531)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:438)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1346)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:170)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-05 09:49:17.027
+!MESSAGE Can't connect to any repository: https://github.com/avahodge/ahodge_august2018.git (https://github.com/avahodge/ahodge_august2018.git: not authorized)
